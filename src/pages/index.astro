@@ -12,7 +12,16 @@ Any page or data can be rebuilt only when needed, without site visitors ever get
 ---
 
 <Layout title="Welcome to Astro.">
-            <iframe src="https://saltoks.com/" width="400" height="400"></iframe>
+            <iframe src="https://saltoks.com/" width="800" height="800"></iframe>
+ <!-- Botón de prueba que ejecuta código al hacer clic -->
+  <button onclick="ejecutarCodigo()">Haz clic aquí</button>
+
+  <script>
+    function ejecutarCodigo() {
+      alert("Este es un código ejecutado desde un botón en un iframe.");
+      // Aquí puedes poner cualquier lógica de prueba que desees ejecutar.
+    }
+  </script>
     <ContextAlert class="mb-4" />
     <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
     <Markdown content={explainer} class="text-lg mb-10" />
